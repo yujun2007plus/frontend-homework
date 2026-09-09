@@ -4,7 +4,9 @@
 
 ## 文件说明
 
-- `index.html`：作业页面源文件
+- `作业提交-单文件.html`：**单文件版**，字体（子集化）与图片全部以 base64 内嵌，交这一个文件即可完整显示
+- `build_single.py`：单文件版的生成脚本（fonttools 字体子集化 + base64 内嵌）
+- `index.html`：作业页面源文件（多文件版，引用素材字体与图片）
 - `font-awesome.min.css` / `fonts/`：作业附件素材中的 Font Awesome 图标字体与书法字体（书法.ttf）
 - `images/`：作业附件素材中的 HTML5 / CSS3 图标图片
 - `preview.png`：页面渲染效果截图
