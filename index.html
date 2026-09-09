@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>万物互联、极致体验</title>
+  <style>
+    /* 若已解压作业附件“素材.rar”中的字体文件，将其放到 fonts/ 目录并取消下面注释即可使用原字体
+    @font-face {
+      font-family: "TitleFont";
+      src: url("fonts/title.ttf");
+    }
+    */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fff;
+      color: #000;
+      font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+    }
+
+    .container {
+      width: 730px;
+      margin: 0 auto;
+      padding: 20px 0 60px;
+    }
+
+    /* 标题：毛笔书法字体 */
+    .main-title {
+      text-align: center;
+      font-family: "TitleFont", "STXingkai", "华文行楷", "STKaiti", "楷体", serif;
+      font-size: 44px;
+      font-weight: bold;
+      margin: 20px 0 40px;
+    }
+
+    /* 两栏介绍区 */
+    .intro {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .intro-item {
+      width: 47%;
+      text-align: center;
+    }
+
+    .intro-item .icon {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 24px;
+    }
+
+    .intro-item p {
+      font-size: 14px;
+      line-height: 2.2;
+      text-align: justify;
+      text-align-last: center;
+    }
+
+    /* 平台支持区 */
+    .platform {
+      margin-top: 60px;
+    }
+
+    .platform h2 {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 40px;
+    }
+
+    .platform-list {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    .platform-item {
+      flex: 1;
+    }
+
+    .platform-item .icon {
+      height: 42px;
+      margin-bottom: 24px;
+    }
+
+    .platform-item .name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 页面标题 -->
+    <h1 class="main-title">万物互联、极致体验</h1>
+
+    <!-- HTML5 / CSS3 介绍 -->
+    <div class="intro">
+      <div class="intro-item">
+        <svg class="icon" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" aria-label="HTML5">
+          <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/>
+        </svg>
+        <p>【HTML5】HTML5不仅仅是HTML规范的当前最新版本，HTML5进化的重大意义还在于HTML5从技术层面带来了八个类别的革新。HTML5规范以“用户至上”为宗旨。也就是说在遇到冲突时，规范的优先级为：用户&gt;页面作者&gt;实现者（浏览器）&gt;规范开发者（W3C/WHATWG）&gt;纯理论。除此之外，HTML5还引入了一种新的安全模型来保证HTML5足够安全。</p>
+      </div>
+      <div class="intro-item">
+        <svg class="icon" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" aria-label="CSS3">
+          <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/>
+        </svg>
+        <p>【HTML5】HTML5不仅仅是HTML规范的当前最新版本，HTML5进化的重大意义还在于HTML5从技术层面带来了八个类别的革新。HTML5规范以“用户至上”为宗旨。也就是说在遇到冲突时，规范的优先级为：用户&gt;页面作者&gt;实现者（浏览器）&gt;规范开发者（W3C/WHATWG）&gt;纯理论。除此之外，HTML5还引入了一种新的安全模型来保证HTML5足够安全。</p>
+      </div>
+    </div>
+
+    <!-- 平台支持 -->
+    <div class="platform">
+      <h2>平台支持</h2>
+      <div class="platform-list">
+        <div class="platform-item">
+          <svg class="icon" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" aria-label="原生移动APP开发">
+            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+          </svg>
+          <div class="name">原生移动APP开发</div>
+        </div>
+        <div class="platform-item">
+          <svg class="icon" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" aria-label="微信公共平台开发">
+            <path d="M385.2 167.6c6.4 0 12.6.3 18.8 1.1C387.4 90.3 303.3 32 207.7 32 100.5 32 13 104.8 13 197.4c0 53.4 29.3 97.5 77.9 131.6l-19.3 58.6 68-34.1c24.4 4.8 43.8 9.7 68.2 9.7 6.2 0 12.1-.3 18.3-.8-4-12.9-6.2-26.6-6.2-40.8-.1-84.9 72.9-154 165.3-154zm-104.5-52.9c14.5 0 24.2 9.7 24.2 24.4 0 14.5-9.7 24.2-24.2 24.2-14.8 0-29.3-9.7-29.3-24.2.1-14.7 14.6-24.4 29.3-24.4zm-136.4 48.6c-14.5 0-29.3-9.7-29.3-24.2 0-14.8 14.8-24.4 29.3-24.4 14.8 0 24.4 9.7 24.4 24.4 0 14.6-9.6 24.2-24.4 24.2zM563 319.4c0-77.9-77.9-141.3-165.4-141.3-92.7 0-165.4 63.4-165.4 141.3S305 460.7 397.6 460.7c19.3 0 38.9-5.1 58.6-9.9l53.4 29.3-14.8-48.6C534 402.1 563 363.2 563 319.4zm-219.1-24.5c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.8 0 24.4 9.7 24.4 19.3 0 10-9.7 19.6-24.4 19.6zm107.1 0c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.5 0 24.4 9.7 24.4 19.3.1 10-9.9 19.6-24.4 19.6z"/>
+          </svg>
+          <div class="name">微信公共平台开发</div>
+        </div>
+        <div class="platform-item">
+          <svg class="icon" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" aria-label="网站开发">
+            <path d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64H240l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H346.7L336 416H512c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM512 64V288H64V64H512z"/>
+          </svg>
+          <div class="name">网站开发</div>
+        </div>
+        <div class="platform-item">
+          <svg class="icon" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg" aria-label="桌面应用开发">
+            <path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"/>
+          </svg>
+          <div class="name">桌面应用开发</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
