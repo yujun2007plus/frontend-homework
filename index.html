@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>形状悬停效果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1c1e26;
+        }
+
+        .stage {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 56px;
+            padding: 56px 32px;
+        }
+
+        .cube {
+            width: 170px;
+            height: 170px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        .cube span {
+            opacity: 0;
+            transition: opacity 0.35s ease;
+            pointer-events: none;
+        }
+
+        .cube:hover {
+            transform: translateY(-10px);
+        }
+
+        .cube:hover span {
+            opacity: 1;
+        }
+
+        /* 1 直角方形：橙 → 红 */
+        .c1 {
+            border-radius: 0;
+            background: linear-gradient(180deg, #ff9a3c 0%, #e84a3f 100%);
+            box-shadow: 0 14px 28px rgba(232, 74, 63, 0.45);
+        }
+
+        .c1:hover {
+            box-shadow: 0 0 32px rgba(232, 74, 63, 0.55);
+        }
+
+        /* 2 小圆角：青绿 → 青 */
+        .c2 {
+            border-radius: 18%;
+            background: linear-gradient(180deg, #5ee4a8 0%, #2ec4b6 100%);
+            box-shadow: 0 14px 28px rgba(46, 196, 182, 0.45);
+        }
+
+        .c2:hover {
+            box-shadow: 0 0 32px rgba(46, 196, 182, 0.55);
+        }
+
+        /* 3 大圆角：淡紫 → 灰蓝 */
+        .c3 {
+            border-radius: 38%;
+            background: linear-gradient(180deg, #c9b8f0 0%, #8b9fd4 100%);
+            box-shadow: 0 14px 28px rgba(139, 159, 212, 0.45);
+        }
+
+        .c3:hover {
+            box-shadow: 0 0 32px rgba(139, 159, 212, 0.55);
+        }
+
+        /* 4 圆形：黄 → 橙 */
+        .c4 {
+            border-radius: 50%;
+            background: linear-gradient(180deg, #ffe566 0%, #ff9f43 100%);
+            box-shadow: 0 14px 28px rgba(255, 159, 67, 0.45);
+        }
+
+        .c4:hover {
+            box-shadow: 0 0 32px rgba(255, 159, 67, 0.55);
+        }
+
+        /* 5 小圆角：深绿 → 蓝灰 */
+        .c5 {
+            border-radius: 18%;
+            background: linear-gradient(180deg, #2d5a4a 0%, #5a6d8a 100%);
+            box-shadow: 0 14px 28px rgba(90, 109, 138, 0.45);
+        }
+
+        .c5:hover {
+            box-shadow: 0 0 32px rgba(90, 109, 138, 0.55);
+        }
+
+        /* 6 圆形：薰衣草 → 深紫 */
+        .c6 {
+            border-radius: 50%;
+            background: linear-gradient(180deg, #b8a0e8 0%, #5b3a9e 100%);
+            box-shadow: 0 14px 28px rgba(91, 58, 158, 0.45);
+        }
+
+        .c6:hover {
+            box-shadow: 0 0 32px rgba(91, 58, 158, 0.55);
+        }
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="cube c1"><span>hover</span></div>
+        <div class="cube c2"><span>hover</span></div>
+        <div class="cube c3"><span>hover</span></div>
+        <div class="cube c4"><span>hover</span></div>
+        <div class="cube c5"><span>hover</span></div>
+        <div class="cube c6"><span>hover</span></div>
+    </div>
+</body>
+</html>
