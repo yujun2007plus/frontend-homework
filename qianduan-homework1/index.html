@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>万物互联、极致体验</title>
+  <!-- 素材中的 Font Awesome 图标字体 -->
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <style>
+    /* 素材中的书法字体，用于页面标题 */
+    @font-face {
+      font-family: "shufa";
+      src: url("fonts/书法.ttf");
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fff;
+      color: #000;
+      font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+    }
+
+    .container {
+      width: 730px;
+      margin: 0 auto;
+      padding: 20px 0 60px;
+    }
+
+    /* 标题：毛笔书法字体 */
+    .main-title {
+      text-align: center;
+      font-family: "shufa", "STXingkai", "华文行楷", "楷体", serif;
+      font-size: 48px;
+      font-weight: normal;
+      margin: 20px 0 40px;
+    }
+
+    /* 两栏介绍区 */
+    .intro {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .intro-item {
+      width: 47%;
+      text-align: center;
+    }
+
+    .intro-item .icon {
+      height: 64px;
+      margin-bottom: 24px;
+    }
+
+    .intro-item p {
+      font-size: 14px;
+      line-height: 2.2;
+      text-align: justify;
+      text-align-last: center;
+    }
+
+    /* 平台支持区 */
+    .platform {
+      margin-top: 60px;
+    }
+
+    .platform h2 {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 40px;
+    }
+
+    .platform-list {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    .platform-item {
+      flex: 1;
+    }
+
+    .platform-item .fa {
+      font-size: 42px;
+      margin-bottom: 24px;
+    }
+
+    .platform-item .name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 页面标题 -->
+    <h1 class="main-title">万物互联、极致体验</h1>
+
+    <!-- HTML5 / CSS3 介绍 -->
+    <div class="intro">
+      <div class="intro-item">
+        <img class="icon" src="images/1.png" alt="HTML5">
+        <p>【HTML5】HTML5不仅仅是HTML规范的当前最新版本，HTML5进化的重大意义还在于HTML5从技术层面带来了八个类别的革新。HTML5规范以“用户至上”为宗旨。也就是说在遇到冲突时，规范的优先级为：用户&gt;页面作者&gt;实现者（浏览器）&gt;规范开发者（W3C/WHATWG）&gt;纯理论。除此之外，HTML5还引入了一种新的安全模型来保证HTML5足够安全。</p>
+      </div>
+      <div class="intro-item">
+        <img class="icon" src="images/2.png" alt="CSS3">
+        <p>【HTML5】HTML5不仅仅是HTML规范的当前最新版本，HTML5进化的重大意义还在于HTML5从技术层面带来了八个类别的革新。HTML5规范以“用户至上”为宗旨。也就是说在遇到冲突时，规范的优先级为：用户&gt;页面作者&gt;实现者（浏览器）&gt;规范开发者（W3C/WHATWG）&gt;纯理论。除此之外，HTML5还引入了一种新的安全模型来保证HTML5足够安全。</p>
+      </div>
+    </div>
+
+    <!-- 平台支持 -->
+    <div class="platform">
+      <h2>平台支持</h2>
+      <div class="platform-list">
+        <div class="platform-item">
+          <i class="fa fa-apple"></i>
+          <div class="name">原生移动APP开发</div>
+        </div>
+        <div class="platform-item">
+          <i class="fa fa-weixin"></i>
+          <div class="name">微信公共平台开发</div>
+        </div>
+        <div class="platform-item">
+          <i class="fa fa-desktop"></i>
+          <div class="name">网站开发</div>
+        </div>
+        <div class="platform-item">
+          <i class="fa fa-laptop"></i>
+          <div class="name">桌面应用开发</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
