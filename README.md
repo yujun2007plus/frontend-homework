@@ -8,9 +8,3 @@
 | [homework-9-29-hover-shapes](./homework-9-29-hover-shapes) | 课后任务 9-29：图形悬停 | 打开 `index.html` |
 | [qianduan-homework1](./qianduan-homework1) | 网页布局 | 源文件 `index.html`，单文件版 `作业提交-单文件.html` |
 | [docs](./docs) | HTML、CSS、JavaScript、Git 笔记 | 阅读对应 Markdown |
-
-下面三个仓库已归档，只留原来的提交记录，以后都改这个仓库：
-
-- https://github.com/yujun2007plus/html5-blog-homework
-- https://github.com/yujun2007plus/homework-9-29-hover-shapes
-- https://github.com/yujun2007plus/qianduan-homework1
