@@ -6,7 +6,7 @@
 
 ## 仓库地址
 
-https://github.com/yujun2007plus/html5-blog-homework
+https://github.com/yujun2007plus/frontend-homework/tree/main/html5-blog-homework
 
 本地打开 `html5错误案例-已修复.html` 即可预览（需与 `html5-logo.png`、`html5-logo.svg` 同目录）。
 
